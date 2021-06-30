@@ -28,10 +28,10 @@ app.post("/",function(req,res){
   };
 
   var jsonData=JSON.stringify(data);
-  const url="https://us6.api.mailchimp.com/3.0/lists/a4d921b8ae";
+  const url="";
   const option={
     method:"POST",
-    auth:"jack:a3b071a4088d43086d77b423432e0d7b3-us6"
+    auth:""
   }
   const request=https.request(url,option,function(response){
   if(response.statusCode===200){
@@ -54,5 +54,3 @@ app.post("/failure",function(req,res){
 app.listen(3000,function(){
   console.log("Server started");
 })
-//3b071a4088d43086d77b423432e0d7b3-us6
-//a4d921b8ae
